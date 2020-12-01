@@ -1,0 +1,23 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de_DE\n"
+
+msgid "RANDOM_MEME_AFFIRMATION"
+msgstr "Alles klar, meen Jung."
+
+msgid "RANDOM_MEME_TITLE"
+msgstr "Meme Bonanza!"
+
+msgid "RANDOM_MEME_SUB_TITLE"
+msgstr "Random memes 4 ya"
+
+msgid "RANDOM_MEME_ACTION_TEXT"
+msgstr "Random meme"
