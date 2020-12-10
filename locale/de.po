@@ -10,14 +10,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: de_DE\n"
 
-msgid "RANDOM_MEME_AFFIRMATION"
-msgstr "Alles klar, meen Jung."
+msgid "WHAT_IS_THE_QUESTION"
+msgstr "WAS IST DIE FRAGE"
 
-msgid "RANDOM_MEME_TITLE"
-msgstr "Meme Bonanza!"
+msgid "WHAT_IS_THE_ANSWER"
+msgstr "WAS IST DIE ANTWORT"
 
-msgid "RANDOM_MEME_SUB_TITLE"
-msgstr "Random memes 4 ya"
+msgid "WHAT_IS_THE_TOPIC"
+msgstr "WAS IST DAS THEMA"
 
-msgid "RANDOM_MEME_ACTION_TEXT"
-msgstr "Random meme"
+msgid "something went wrong on the server"
+msgstr "Auf dem Server ist ein Fehler aufgetreten"
+
+msgid "CARD_CREATED"
+msgstr "KARTE ERSTELLT"
+
+msgid "NO_MORE_QUIESTION"
+msgstr "KEINE FRAGEN MEHR"
+
+msgid "CORRECT_ANSWER"
+msgstr "Richtig"
+
+msgid "WRONG_ANSWER"
+msgstr "Falsch"
+
