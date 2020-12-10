@@ -8,3 +8,4 @@ __pycache__
 skill_sdk.egg-info/
 .venv
 *.mo
+*.sql
