@@ -8,7 +8,7 @@ from skill_sdk import context
 import nltk, string
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-connection = sqlite3.connect('/home/fateme/magenta/memebonanza-skill/assets/questions.db')
+connection = sqlite3.connect('/home/fateme/magenta/lernkarte-skill/assets/questions.db')
 
 stemmer = nltk.stem.porter.PorterStemmer()
 remove_punctuation_map = dict((ord(char), None) for char in string.punctuation)
