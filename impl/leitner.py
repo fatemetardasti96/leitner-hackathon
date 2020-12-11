@@ -132,9 +132,18 @@ def handle_review_answer(user_id: str, answer:str) -> Response:
             msg = _("CORRECT_ANSWER")
         else:
             step = max(1, step-1)
-            msg = _("WRONG_ANSWER")
+            msg = _("WRONG_ANSWER",correct_answer=correct_answer)
         cursor.execute("update questions set step = ? where id = ?", [step, last_question_id])        
         connection.commit()
     except Exception as err:
         return tell(_("something went wrong on the server"))
+    return tell(msg)
+
+
+@skill.intent_handler(IntentNames.STATISTIC)
+def handler_statistic(user_id: str):
+    cursor = connection.cursor()
+    questions_cnt = cursor.execute("SELECT COUNT(*) as cnt FROM questions WHERE user_id = ? ", [user_id]).fetchone()
+    completed_questions_cnt = cursor.execute("SELECT COUNT(*) as cnt FROM questions WHERE user_id = ? AND step = 5", [user_id]).fetchone()
+    msg = _("STATISTIC", total_num=questions_cnt, comp_num=completed_questions_cnt)
     return tell(msg)

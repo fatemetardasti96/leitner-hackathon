@@ -14,10 +14,10 @@ msgid "WHAT_IS_THE_QUESTION"
 msgstr "WAS IST DIE FRAGE"
 
 msgid "WHAT_IS_THE_ANSWER"
-msgstr "WAS IST DIE ANTWORT"
+msgstr "Was IST die Antwort auf diese Frage"
 
 msgid "WHAT_IS_THE_TOPIC"
-msgstr "WAS IST DAS THEMA"
+msgstr "WAS IST DAS THEMA auf diese Frage"
 
 msgid "something went wrong on the server"
 msgstr "Auf dem Server ist ein Fehler aufgetreten"
@@ -32,5 +32,7 @@ msgid "CORRECT_ANSWER"
 msgstr "Richtig"
 
 msgid "WRONG_ANSWER"
-msgstr "Falsch"
+msgstr "Falsch, die anstwort ist {correct_answer}"
 
+msgid "STATISTIC"
+msgstr "Sie haben {total_num} Lernkarte und {comp_num} davon sind fertiggestellt"
