@@ -8,17 +8,16 @@ from skill_sdk import context
 import nltk, string
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-connection = sqlite3.connect('<PATH_TO_DB>')
+connection = sqlite3.connect('/assets/questions.db')
 
 def initialize_db():
     cursor = connection.cursor()
-    cursor.execute("CREATE TABLE IF NOT EXISTS questions (id INTEGER PRIMARY KEY, user_id VARCHAR (128) NOT NULL, quiz TEXT, answer TEXT,\
-    topic VARCHAR (100), step INTEGER DEFAULT 1);\
-    CREATE TABLE IF NOT EXISTS user_questions (id INTEGER PRIMARY KEY, questions_id INTEGER) ")
+    cursor.execute("CREATE TABLE IF NOT EXISTS questions (id INTEGER PRIMARY KEY, user_id VARCHAR (128) NOT NULL, quiz TEXT, answer TEXT,topic VARCHAR (100), step INTEGER DEFAULT 1)")
+    cursor.execute("CREATE TABLE IF NOT EXISTS user_questions (id INTEGER PRIMARY KEY, questions_id INTEGER) ")
     connection.commit()    
 
 initialize_db()
-
+nltk.download('punkt')
 stemmer = nltk.stem.porter.PorterStemmer()
 remove_punctuation_map = dict((ord(char), None) for char in string.punctuation)
 

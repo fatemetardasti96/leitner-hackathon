@@ -1,1 +1,4 @@
 skill-sdk
+nltk 
+sklearn
+db-sqlite3
