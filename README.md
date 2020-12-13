@@ -1,5 +1,7 @@
 # Skill Lernkarte
 
+You can create audio flashcards with "Lernkarte *MAGENTA* skill" and review them till mastery and watch your progress!
+
 Create Learning Card with saying "Erstellen Sie die Lernkarte"
 
 And review them with saying "Fragen Sie mich zum Thema Geschichte"
